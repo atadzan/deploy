@@ -3,7 +3,7 @@ version: '3.7'
 # Settings and configurations that are common for all containers
 x-minio-common: &minio-common
   image: quay.io/minio/minio:RELEASE.2023-07-11T21-29-34Z
-  command: server --console-address ":9001" http://minio{1...4}/data1
+  command: server --console-address ":9001" -v /home/belet/testMinio
   environment:
     - MINIO_ROOT_USER=beletstorage
     - MINIO_ROOT_PASSWORD=beletstorage
