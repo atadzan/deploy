@@ -7,7 +7,6 @@ x-minio-common: &minio-common
   environment:
     - MINIO_ROOT_USER=beletstorage
     - MINIO_ROOT_PASSWORD=beletstorage
-    - MINIO_VOLUMES="/data1"
   expose:
     - "9000"
     - "9001"
